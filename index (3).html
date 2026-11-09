@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VELORA – Modern Fashion Store</title>
+  <meta name="description" content="VELORA is a modern fashion house for women, men and accessories. Timeless pieces, considered design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- 1. ANNOUNCEMENT BAR -->
+  <div class="announcement" role="region" aria-label="Announcement">
+    <p>New Season Collection &ndash; <a href="#new-arrivals">Explore Now</a></p>
+  </div>
+
+  <!-- 2. NAVIGATION -->
+  <header class="site-header" id="home">
+    <div class="container nav">
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+
+      <a href="#home" class="logo" aria-label="VELORA home">VELORA</a>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#new-arrivals" data-nav="new">New Arrivals</a></li>
+          <li><a href="#shop" data-nav="Women">Women</a></li>
+          <li><a href="#shop" data-nav="Men">Men</a></li>
+          <li><a href="#collections" data-nav="collections">Collections</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn" id="wishlistBtn" aria-label="View saved items">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.1C1.8 7.8 3.6 5 6.6 5c1.9 0 3.4 1 5.4 3 2-2 3.5-3 5.4-3 3 0 4.8 2.8 3.6 5.9C19 15.600 12 20 12 20z"/></svg>
+          <span class="badge" id="wishCount" aria-live="polite">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Open shopping bag" aria-controls="cartDrawer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+          <span class="badge" id="cartCount" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 3. HERO -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Autumn / Winter 2026</p>
+          <h1 id="heroTitle">Style that<br><em>speaks</em> for you.</h1>
+          <p class="lead">Considered silhouettes, natural fabrics and quiet details &mdash; wardrobe essentials designed to be worn for years, not seasons.</p>
+          <div class="hero-cta">
+            <a href="#shop" class="btn btn-dark" data-filter-link="Women">Shop Women</a>
+            <a href="#shop" class="btn btn-outline" data-filter-link="Men">Shop Men</a>
+          </div>
+          <ul class="hero-stats" aria-label="Brand highlights">
+            <li><strong>Free</strong> shipping over $200</li>
+            <li><strong>30-day</strong> easy returns</li>
+            <li><strong>Natural</strong> fabrics</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1100&q=75" alt="Model wearing a neutral-toned outfit from the new VELORA collection" width="1100" height="1375" fetchpriority="high" data-fallback="VELORA">
+          <div class="hero-tag">
+            <span>New In</span>
+            <strong>The Autumn Edit</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED CATEGORIES -->
+    <section class="section" aria-labelledby="catTitle">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Browse</p>
+          <h2 id="catTitle">Shop by category</h2>
+        </header>
+        <div class="cat-grid">
+          <a href="#shop" class="cat-card" data-filter-link="Women">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy" width="800" height="1000" data-fallback="Women">
+            <span class="cat-label"><span>Women</span><span class="arrow" aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a href="#shop" class="cat-card" data-filter-link="Men">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy" width="800" height="1000" data-fallback="Men">
+            <span class="cat-label"><span>Men</span><span class="arrow" aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a href="#shop" class="cat-card" data-filter-link="Accessories">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=70" alt="" loading="lazy" width="800" height="1000" data-fallback="Accessories">
+            <span class="cat-label"><span>Accessories</span><span class="arrow" aria-hidden="true">&rarr;</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 & 6. BESTSELLERS + FILTERS -->
+    <section class="section section-alt" id="shop" aria-labelledby="shopTitle">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Most loved</p>
+          <h2 id="shopTitle">Bestsellers</h2>
+        </header>
+
+        <div class="toolbar">
+          <div class="chips" role="group" aria-label="Filter by category">
+            <button class="chip is-active" data-filter="All" aria-pressed="true">All</button>
+            <button class="chip" data-filter="Women" aria-pressed="false">Women</button>
+            <button class="chip" data-filter="Men" aria-pressed="false">Men</button>
+            <button class="chip" data-filter="Accessories" aria-pressed="false">Accessories</button>
+            <button class="chip" data-filter="Saved" aria-pressed="false">Saved</button>
+          </div>
+          <div class="tools">
+            <label class="field search-field">
+              <span class="sr-only">Search products</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+              <input type="search" id="searchInput" placeholder="Search products" autocomplete="off">
+            </label>
+            <label class="field sort-field">
+              <span class="sr-only">Sort products</span>
+              <select id="sortSelect">
+                <option value="featured">Sort: Featured</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <p class="result-note" id="resultNote" role="status" aria-live="polite"></p>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <h3>No pieces found</h3>
+          <p>Try a different search or clear your filters.</p>
+          <button class="btn btn-outline" id="resetFilters">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PROMO BANNER -->
+    <section class="promo" id="collections" aria-labelledby="promoTitle">
+      <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1800&q=70" alt="" loading="lazy" width="1800" height="900" data-fallback="VELORA Collections">
+      <div class="promo-overlay"></div>
+      <div class="container promo-inner">
+        <p class="eyebrow light">The Collection</p>
+        <h2 id="promoTitle">The Art of<br>Everyday Style</h2>
+        <p>Pieces that move effortlessly from morning to evening.</p>
+        <a href="#new-arrivals" class="btn btn-light">Discover Collection</a>
+      </div>
+    </section>
+
+    <!-- 8. NEW ARRIVALS -->
+    <section class="section" id="new-arrivals" aria-labelledby="newTitle">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Just landed</p>
+          <h2 id="newTitle">New Arrivals</h2>
+        </header>
+        <div class="product-grid product-grid--four" id="newGrid"></div>
+      </div>
+    </section>
+
+    <!-- 10. NEWSLETTER -->
+    <section class="newsletter" aria-labelledby="nlTitle">
+      <div class="container newsletter-inner">
+        <div>
+          <p class="eyebrow">The VELORA Letter</p>
+          <h2 id="nlTitle">Join the inner circle</h2>
+          <p>Early access to new collections and private sales. Join for a taste of what&rsquo;s next.</p>
+        </div>
+        <form id="newsletterForm" novalidate>
+          <label for="nlEmail" class="sr-only">Email address</label>
+          <div class="nl-row">
+            <input type="email" id="nlEmail" name="email" placeholder="Your email address" autocomplete="email" aria-describedby="nlMsg" required>
+            <button type="submit" class="btn btn-dark">Subscribe</button>
+          </div>
+          <p class="nl-msg" id="nlMsg" role="status" aria-live="polite"></p>
+          <p class="nl-demo">Front-end demo only &mdash; no email is sent or stored.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo--light">VELORA</a>
+        <p>A modern fashion house built on quiet confidence, natural fabrics and enduring design.</p>
+        <ul class="social" aria-label="Social media">
+          <li><a href="#" aria-label="Instagram" data-demo-link><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="0.800"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook" data-demo-link><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a></li>
+          <li><a href="#" aria-label="Pinterest" data-demo-link><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M11 8c3-1 5 1 4.500 3.500S13 15 11 14.500M10.500 11L9 19"/></svg></a></li>
+          <li><a href="#" aria-label="X" data-demo-link><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a></li>
+        </ul>
+      </div>
+      <nav aria-label="Quick links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
+          <li><a href="#shop" data-filter-link="Women">Women</a></li>
+          <li><a href="#shop" data-filter-link="Men">Men</a></li>
+          <li><a href="#shop" data-filter-link="Accessories">Accessories</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Customer support">
+        <h3>Customer Support</h3>
+        <ul>
+          <li><a href="#" data-demo-link>Shipping &amp; Delivery</a></li>
+          <li><a href="#" data-demo-link>Returns &amp; Exchanges</a></li>
+          <li><a href="#" data-demo-link>Size Guide</a></li>
+          <li><a href="#" data-demo-link>FAQs</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Contact</h3>
+        <address>
+          VELORA Studio (demo)<br>
+          12 Example Lane, Sample City<br>
+          hello@velora-demo.example<br>
+          +1 (555) 010-0199
+        </address>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 VELORA. All rights reserved. Demo project &mdash; fictional brand.</p>
+    </div>
+  </footer>
+
+  <!-- 9. CART DRAWER -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true" tabindex="-1">
+    <header class="drawer-head">
+      <h2 id="cartTitle">Your Bag <span id="drawerCount"></span></h2>
+      <button class="icon-btn" id="closeCart" aria-label="Close shopping bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </header>
+    <div class="drawer-body" id="cartItems"></div>
+    <footer class="drawer-foot" id="cartFoot">
+      <dl class="totals">
+        <div><dt>Subtotal</dt><dd id="subtotal">$0.00</dd></div>
+        <div><dt>Shipping</dt><dd id="shipping">$0.00</dd></div>
+        <div class="grand"><dt>Total</dt><dd id="total">$0.00</dd></div>
+      </dl>
+      <p class="ship-note" id="shipNote"></p>
+      <button class="btn btn-dark btn-block" id="checkoutBtn">Checkout</button>
+      <button class="link-btn" id="clearCart">Clear bag</button>
+    </footer>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
